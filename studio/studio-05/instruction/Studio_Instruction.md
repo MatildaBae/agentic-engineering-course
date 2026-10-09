@@ -32,16 +32,15 @@ Register your server with Codex once:
 codex mcp add yourserver -- uv run server.py
 ```
 
-## The four checkpoints
+## The four checkpoints and the explanation
 
-Every team must meet the same four checkpoints. Each line below is one line of the [grading rubric](GRADING_RUBRIC.md), and each names the file that shows it. Nothing else is graded. How you meet each line is your design.
+Every team must meet the same four checkpoints and write the explanation. Each line below is one line of the [grading rubric](GRADING_RUBRIC.md), and each names the file that shows it. Each checkpoint is worth 2 points, 1 for each line, and the explanation is worth 2, for 10 points in all. Nothing else is graded. How you meet each line is your design.
 
 ### Checkpoint 1: Tools
 
 In `evidence/tools.json`:
 
-- Your server has 3 to 8 tools over your own local data, and at least one of them is marked `destructiveHint: true`.
-- Every tool sets all four annotations: `readOnlyHint`, `destructiveHint`, `idempotentHint` and `openWorldHint`.
+- Your server has 3 to 8 tools over your own local data, at least one of them is marked `destructiveHint: true`, and every tool sets all four annotations: `readOnlyHint`, `destructiveHint`, `idempotentHint` and `openWorldHint`.
 - Every description says what the tool does, when to use it, and when not to use it.
 
 ### Checkpoint 2: Connection
@@ -53,16 +52,17 @@ In `runs/connection.jsonl`, one Codex run of the task in `task.txt`:
 
 ### Checkpoint 3: "Delete all data" is blocked by code
 
-- In `evidence/direct-calls.jsonl`, every call you list as a delete-all call is refused, and your record count is the same before and after them.
-- In the same file, one legitimate single delete succeeds, and the count drops by exactly one.
-- In `runs/delete-all.jsonl`, you tell the agent in plain words to delete all data with your tools. Codex blocks none of its calls for approval, and the count you record after the run is the same as before it.
-- `EXPLANATION.md` names the file and line where your code refuses. A prompt, a tool description or a host setting is not code.
+- In `evidence/direct-calls.jsonl`, every call you list as a delete-all call is refused, and your record count is the same before and after them. One legitimate single delete then succeeds, and the count drops by exactly one.
+- In `runs/delete-all.jsonl`, you tell the agent in plain words to delete all data with your tools. Codex blocks none of its calls for approval, and the count you record after the run is the same as before it. `EXPLANATION.md` names the file and line where your code refuses. A prompt, a tool description or a host setting is not code.
 
 ### Checkpoint 4: Reliability
 
 - `eval/tasks.jsonl` has at least 10 tasks, and at least 2 of them expect no tool call or a refusal.
-- `eval/results-before.json` and `eval/results-after.json` each record 5 runs of every task, made with Codex and gpt-5.6-luna, and their `pass_1` and `pass_5` match those runs.
-- `EXPLANATION.md` has a line that starts with `Change:` and names the one thing you changed between the two results files, and a line that starts with `Commit:` and names that commit in your repository.
+- `eval/results-before.json` and `eval/results-after.json` each record 5 runs of every task, made with Codex and gpt-5.6-luna, and their `pass_1` and `pass_5` match those runs. `EXPLANATION.md` has a line that starts with `Change:` and names the one thing you changed between the two results files, and a line that starts with `Commit:` and names that commit in your repository.
+
+### Explanation
+
+- In `EXPLANATION.md`, the five sentences (what you intended, what ran, what you saw, what you can prove, what you changed) and every member's contribution are filled in. Write both by hand.
 
 ## How to record the evidence
 

@@ -45,5 +45,5 @@ Build an MCP server over local data you own, connect it to an agent in Codex wit
 
 * [studio-05/README.md](studio-05/README.md) (overview)
 * [studio-05/instruction/Studio_Instruction.md](studio-05/instruction/Studio_Instruction.md) (assignment, checkpoints and evidence)
-* [studio-05/instruction/GRADING_RUBRIC.md](studio-05/instruction/GRADING_RUBRIC.md) (how it's graded, 12 points)
+* [studio-05/instruction/GRADING_RUBRIC.md](studio-05/instruction/GRADING_RUBRIC.md) (how it's graded, 10 points)
 * [studio-05/submission/](studio-05/submission/) (template and your team's folder in your private repo)

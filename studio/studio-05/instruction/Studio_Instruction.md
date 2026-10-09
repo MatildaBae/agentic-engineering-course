@@ -62,9 +62,9 @@ In `runs/connection.jsonl`, one Codex run of the task in `task.txt`:
 
 ### Explanation
 
-- In `EXPLANATION.md`, answer the four why questions below
+- In `EXPLANATION.md`, answer the four questions below.
   1. Tools: why did you choose these tools?
-  2. Connection: how did the agent called the tools?
+  2. Connection: how did the agent call the tools?
   3. Delete all data: how did you reject the operation?
   4. Reliability: what did you do to improve reliability and why?
 

@@ -12,7 +12,7 @@
 | 3.2 | 1 | In a Codex run told in plain words to delete all data with your tools, Codex blocks none of its calls for approval, and `count_after_agent_run` equals `count_after_single_delete`. `EXPLANATION.md` names the file and line where your code refuses, and that line is code, not a prompt, a tool description or a host setting. | `runs/delete-all.jsonl`, `runs/delete-all.txt`, `evidence/direct-calls.jsonl`, `EXPLANATION.md`, your server's code |
 | 4.1 | 1 | At least 10 tasks, each with an expected outcome and a check, and at least 2 expect no tool call or a refusal. | `eval/tasks.jsonl` |
 | 4.2 | 1 | Both results files record 5 runs of every task, made with Codex and gpt-5.6-luna, and their `pass_1` and `pass_5` match those runs. A `Change:` line names the one thing you changed, and a `Commit:` line names that commit in your repository. | `eval/results-before.json`, `eval/results-after.json`, `EXPLANATION.md` |
-| 5 | 2 | `EXPLANATION.md` answers the four why questions, one for each checkpoint. Each answer gives the reason behind what you did, not only what you did, and names the file, line or run it explains. | `EXPLANATION.md` |
+| 5 | 2 | `EXPLANATION.md` answers the four questions. | `EXPLANATION.md` |
 
 All files are in `studio/studio-05/submission/<team>/` in your team's private repository, at the commit you submit.
 

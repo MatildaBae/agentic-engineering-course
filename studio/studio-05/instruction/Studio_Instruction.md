@@ -62,7 +62,11 @@ In `runs/connection.jsonl`, one Codex run of the task in `task.txt`:
 
 ### Explanation
 
-- In `EXPLANATION.md`, the five sentences (what you intended, what ran, what you saw, what you can prove, what you changed) and every member's contribution are filled in. Write both by hand.
+- In `EXPLANATION.md`, answer the four why questions below, one for each checkpoint. Each answer gives the reason behind what you did, not only what you did, and names the file, line or run it explains. Write the answers by hand.
+  1. Tools: why did you choose these tools, and why does each one have the annotations it has?
+  2. Connection: why did the agent call the tools it called in your connection run?
+  3. Delete all data: why does your refusal sit at that line of code and not somewhere else?
+  4. Reliability: why did you expect your one change to help, and do your two results files support that?
 
 ## How to record the evidence
 

@@ -7,26 +7,19 @@
 
 File and line: [path/to/file:line]
 
-Explain in one or two sentences what that line checks.
-
 ## The one change between the two evaluations
 
 Change: [the one thing you changed: a description, a reply format or a limit]
 Commit: [the commit that made the change]
 
-## Five sentences
+## Why
 
-Write this section by hand. Do not use AI.
+Write this section by hand. Do not use AI. Give the reason behind what you did, not only what you did, and name the file, line or run each answer is about.
 
-1. What you intended:
-2. What ran:
-3. What you saw:
-4. What you can prove:
-5. What you changed:
+1. Tools: why did you choose these tools, and why does each one have the annotations it has?
 
-## Contributions
+2. Connection: why did the agent call the tools it called in your connection run?
 
-Write this section by hand. Do not use AI.
+3. Delete all data: why does your refusal sit at that line of code and not somewhere else?
 
-- **Member:** [contribution]
-- **Member:** [contribution]
+4. Reliability: why did you expect your one change to help, and do your two results files support that?
